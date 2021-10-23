@@ -1,0 +1,69 @@
+body {
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    font-size: 16px;
+    color: white;
+    
+}
+
+header {
+    display: block;
+    width: 50%;
+    margin: 20px;
+    text-align: left;
+}
+
+section {
+    width: 50%;
+}
+
+form {
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    height: 350px;
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+    margin: 20px;
+}
+
+form p {
+    color: gray;
+    font-size: x-small;
+    margin: 15px;
+}
+
+a {
+    color:red;
+}
+
+input {
+    margin: 10px;
+    width: auto;
+    width: 75%;
+    padding: 5px;;
+}
+
+#trial-button {
+    background-color: hsl(248, 32%, 49%) ;
+    display: block;
+    padding: 5px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+}
+
+#claim-button {
+    background-color: hsl(154, 59%, 51%);
+    padding: 5px;
+    margin: 8px;
+    color: white;
+    border: #00b33c;
+    border-radius: 5px;
+    box-shadow: 1px 2px #00b33c;
+    width: 80%;
+    height: 35px;
+}
