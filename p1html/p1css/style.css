@@ -1,9 +1,12 @@
-* {
-    background-image: url(intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 10vh;
 }
 
 body {
     background-color: hsl(0, 100%, 74%) ;
+    background-image: url("../intro-component-with-signup-form-master/images/bg-intro-desktop.png");
     font-size: 16px;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -24,10 +27,8 @@ section {
 form {
     background-color: white;
     border-radius: 5px;
-    width: 70%;
     height: 350px;
     text-align: center;
-    display: block;
     padding-top: 50px;
     margin: 20px;
 }
@@ -35,7 +36,7 @@ form {
 form p {
     color: gray;
     font-size: x-small;
-    margin: 15px;
+    margin: 5px;
 }
 
 a {
@@ -45,29 +46,29 @@ a {
 input {
     margin: 10px;
     width: auto;
-    width: 75%;
-    padding: 5px;;
+    width: 85%;
+    padding: 10px;;
 }
 
-#trial-button {
-    background-color: hsl(248, 32%, 49%) ;
-    display: block;
-    padding: 5px;
+.shadow {
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0 / 30%);
+}
+
+.button {
+    padding: 20px;
     margin: 20px;
     color: white;
-    border-radius: 5px;
-    width: 70%;
+    border: none;
+    border-radius: .5rem;
+    width: 90%;
     height: 40px;
 }
 
-#claim-button {
+.blue-button {
+    background-color: hsl(248, 32%, 49%) ;
+}
+
+.green-button {
     background-color: hsl(154, 59%, 51%);
-    padding: 5px;
-    margin: 8px;
-    color: white;
-    border: #00b33c;
-    border-radius: 5px;
-    box-shadow: 1px 2px #00b33c;
-    width: 80%;
-    height: 35px;
+   
 }
