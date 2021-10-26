@@ -1,9 +1,13 @@
+* {
+    background-image: url(intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+}
+
 body {
     background-color: hsl(0, 100%, 74%) ;
-    background-image: url("intro-component-with-signup-form-master/images/bg-intro-desktop.png");
     font-size: 16px;
     color: white;
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 header {
