@@ -1,0 +1,113 @@
+* {
+    font-family: 'Public Sans', sans-serif;
+    font size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.item {
+    display: flex;
+}
+
+nav {
+    width: 100vh;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+}
+
+.genButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 1.8rem;
+    border-radius: 2.5rem;
+    border: none;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+.section1 {
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(images/bg-intro-desktop.svg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 60rem;
+    width: 100vw;
+    height: 40vh;
+}
+
+.section1 div {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    padding: 0 auto;
+}
+.section2 {
+    background-color: hsl(220, 16%, 96%);
+}
+
+.section2 div {
+    flex-direction: column;
+}
+
+.section2 div div.container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section2 div div.item {
+    width: 80vh;
+}
+
+footer {
+    background-color: hsl(233, 26%, 24%);
+}
+
+footer div div div ul li {
+    list-style: none;
+    font-size: xx-small;
+    font-weight: lighter;
+}
+
+div.container.Footerleft div.container {
+
+}
+sec
+.gray {
+    color: rgb(169,169,169);
+}
+
+.darkBlue {
+    color: hsl(233, 26%, 24%)
+}
+
+.limeGreen {
+    color: hsl(136, 65%, 51%);
+}
+
+.brigthCyan {
+    color: hsl(192, 70%, 51%);
+}
+
+.grayBlue {
+    color: hsl(233, 8%, 62%);
+}
+
+.lGrayBlue {
+    color: hsl(220, 16%, 96%);
+}
+
+.vLightGray {
+    color: hsl(0, 0%, 98%);
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
