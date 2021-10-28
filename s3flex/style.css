@@ -1,0 +1,30 @@
+.container{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+}
+    
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: rgb(25, 151, 25);
+}
+
+.red {
+    background-color: rgb(194, 24, 24);
+}
+
+.blue {
+    background-color: rgb(0, 0, 245);
+}
+
+.purple {
+    background-color: rgb(158, 22, 192);
+}
