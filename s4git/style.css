@@ -225,8 +225,8 @@ h4{
 
 .card>img{
     width: 18vw;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
 }
 
 .card>div>p:first-of-type{
