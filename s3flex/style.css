@@ -1,5 +1,10 @@
+h1 {
+    text-align: center;
+}
+
 .container{
     border: 1px solid rgb(0, 0, 0);
+    display: flex;
 }
 
 .square{
@@ -7,6 +12,39 @@
     height: 50px;
     margin: 5px;
     color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3 {
+    padding-top: .5em;
+}
+
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.rowReverse {
+    flex-direction: row-reverse;
 }
     
 .black {
