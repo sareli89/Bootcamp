@@ -1,0 +1,66 @@
+# 
+
+1. Escribe el selector de CSS correspondiente a los siguientes enunciados: 
+- Selecciona todos los elementos del tipo párrafo que tengan la clase main-text.
+
+p.main-text {}
+
+- Selecciona todos los elementos de lista pares dentro de una lista no ordenada
+
+ul li:nth-of-type(even) {}
+
+- Selecciona los links visitados dentro de una barra de navegación
+
+nav link:visited {}
+
+- Selecciona la imagen que sea descendiente inmediato de una card sobre la que se coloca el puntero del mouse
+Card:hover + img {}
+- Selecciona la primer sección que se encuentre dentro de una etiqueta main
+Main section:first-of-type {}
+- Selecciona cualquier elemento que incluya en su classlist el texto "btn"
+.classlist[btn]
+- Selecciona todos los botones excepto aquellos que sean el último hijo
+button:not(last-child) {}
+1. Describe qué elemento será seleccionado con base en los siguientes selectores:
+
+```jsx
+header#main-header > ul --> todos los ul que sean hijos directos de header con el id de #main-header
+```
+
+```jsx
+aside ul li:not(even) --> todos los elementos impares dentro de una lista no ordenada que este en un aside
+```
+
+```jsx
+section#posts article:nth-of-type( odd ) -->  los artículos impares dentro de secciones con id #posts
+```
+
+```jsx
+table tr td --> los rows dentro de una columna de una tabla
+```
+
+```jsx
+footer > ul li a.nav-link --> todos ítems con anchor que tengan la clase de .nav-link que pertenezcan a una lista desordenada y sean hijos directos del footer```
+
+```jsx
+p span.text-white --> todos los párrafos que tengan el tag span con id .text-white
+```
+
+```jsx
+section.bg-dark p.text-white span --> span dentro de párrafos con clase .text-white que a su vez este dentro de sección con clase .bg-darkquizz
+```
+
+1. Escribir el código necesario para crear los siguientes componentes:
+- Un botón cuyo color orginal sea azul, texto blanco, y al poner el mouse sobre de él su color de fondo cambie a peru y el texto sea negro ( el botón no debe tener borde en ninguno de ambos estados )
+- una sección que mida el ancho completo de la pantalla, la mitad de la pantalla de alto, y que dentro tenga dos imágenes cuales quiera, ambas con espacio igual entre ellas y entre los bordes de la sección
+1. El ejercicio pro!
+- Crear 3 inputs de tipo radio, con las etiquetas "círculo", "cuadrado", "rectangulo", también crear un elemento que cambie de forma dependiendo del radio que esté seleccionado ( si se selecciona "círculo", el elemento debe convertirse en un círculo, y así respectivamente).
+    
+    * Para lograr que los radiobuttons sean excluyentes, se debe colocar el atributo "name" y todos deben tener el mismo valor, p.e:
+    
+
+```jsx
+<input type="radio" name="shape" id="forma-1">
+
+<input type="radio" name="shape" id="forma-2">
+```
