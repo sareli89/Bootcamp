@@ -1,0 +1,50 @@
+header{
+    nav {
+        ul {
+            li {
+                color: red;
+                &:hover{
+                    color: green;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+}
+
+@mixin cards($color-fondo, $color-texto, $border-redondeado) {
+    width: 250px;
+    max-width: 250px;
+    border-radius: $border-redondeado;
+    border: 1px solid #FFF; 
+    margin: 10px;
+    padding: 10px;
+    background-color: $color-fondo;
+    color: $color-texto;
+    h2 {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+    
+.card {
+    @include cards(gray, #FFF, 5px)
+}
+
+.card-ligth {
+    @include cards( lightgrey, #FFF, 15px) 
+    
+}
+
+.card-brown {
+    @include cards(brown, yellow, 25px);
+}
+
+.card-darks {
+    @include cards( darkblue, white, 35px);
+}

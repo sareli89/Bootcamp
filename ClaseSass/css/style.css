@@ -1,0 +1,86 @@
+header nav ul li {
+  color: red;
+}
+
+header nav ul li:hover {
+  color: green;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  width: 250px;
+  max-width: 250px;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  margin: 10px;
+  padding: 10px;
+  background-color: gray;
+  color: #FFF;
+}
+
+.card h2 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-ligth {
+  width: 250px;
+  max-width: 250px;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgrey;
+  color: #FFF;
+}
+
+.card-ligth h2 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-brown {
+  width: 250px;
+  max-width: 250px;
+  border-radius: 25px;
+  border: 1px solid #FFF;
+  margin: 10px;
+  padding: 10px;
+  background-color: brown;
+  color: yellow;
+}
+
+.card-brown h2 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-darks {
+  width: 250px;
+  max-width: 250px;
+  border-radius: 35px;
+  border: 1px solid #FFF;
+  margin: 10px;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+}
+
+.card-darks h2 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
