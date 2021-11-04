@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {  
+    width: 70%;
+    height: 50vh;
+    font-size: 15px;
+    color: white;
+    margin: 4rem;
+    display: flex;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    img {
+        h2 {
+            p{
+
+            }
+        }
+    }
+}
+
+@mixin cards($color-fondo) {
+    flex-flow: column wrap;
+    padding: 1rem;
+    background-color: $color-fondo;
+}
+.card-sedan {
+    @include cards(hsl(31, 77%, 52%)
+}
+
+.card-suv {
+    
+    border-radius: 3px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-lux {
+    flex-flow: column wrap;
+    padding: 1rem;
+    border-radius: 3px;
+    background-color: hsl(179, 100%, 13%));
+}
+
+
+
+@mixin $dgris-ligero {
+    background-color: hsl(0, 0%, 95%);
+}
+
+@mixin $vdCyan-color {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+.big-shoulder {
+    font-family: 'Big Shoulders Display', cursive, sans-serif;
+}
+
+.lexed-deca {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+img {
+    padding: .5rem;
+
+}
+
+h2 {
+    padding: .5rem;
+}
+
+p {
+    padding: .5rem;
+}
+
+button {
+    background:none;
+    border: 1px solid white;
+    color: white;
+    margin: .75rem;
+    padding: .5rem;
+    border-radius: 45rem;
+    width: 10rem;
+}
