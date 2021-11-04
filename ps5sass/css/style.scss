@@ -1,0 +1,90 @@
+@mixin custom-wrapper($border-color){
+    border: 1px solid $border-color;
+    box-shadow: 3px 3px 5px 5px #dadada;
+    padding: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0.75rem;
+}
+
+.shape {
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    background-color: black;
+}
+
+
+.dis-flex{
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: row;
+}
+
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.card{
+    @include custom-wrapper(#333);
+    margin:0 1rem 1rem 1rem;
+    img{
+        width: 50%;
+        margin:0 auto;
+        border-radius: 100%;
+    }
+    .card-body{
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and ( max-width: 768px ){
+    .shape{
+        height: 200px;
+        border-radius: 0;
+        background-color: blue;
+    }
+
+    .card-wrapper{
+        flex-wrap: wrap;
+        flex-direction:column;
+        padding: 0;
+    }
+    
+}
+
+@media only screen and ( max-width: 1024px ) {
+    .shape{
+        border-radius: 100%;
+        background-color: red;
+    }
+    .card-wrapper{
+        flex-wrap: wrap;
+        flex-direction:row;
+    }
+    .card{
+        width:calc( 50% - 2rem)
+    }
+}
+
+@media only screen and ( min-width: 1024px ){
+    .card-wrapper{
+        flex-wrap: nowrap;
+    }
+}
