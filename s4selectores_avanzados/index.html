@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Quizz CSS y HTML</h1>
+        
+            <ul>
+                <li><a href="ejercicio1">Ejercicio 1</a></li>
+                <li><a href="ejercicio2">Ejercicio 2</a></li>
+                <li><a href="ejercicio3">Ejercicio 3</a></li>
+                <li><a href="ejercicio4">Ejercicio 4</a></li>
+            </ul>
+            
+        </nav>
+    </header>        
+    <main>
+                    <h2>Ejercicio 1</h2>
+                        <h3>Escribe el selector de CSS correspondiente a los siguientes enunciados:</h3>
+                        <p>Selecciona todos los elementos del tipo párrafo que tengan la clase main-text.</p>
+                        <code>p.main-text</code>
+                        <p>Selecciona todos los elementos de lista pares dentro de una lista no ordenada</p>
+                        <code>ul li:nth-of-type(even)</code>
+                        <p>Selecciona los links visitados dentro de una barra de navegación</p>
+                        <code>nav a:visited</code>
+                        <p>Selecciona la imagen que sea descendiente inmediato de una card sobre la que se coloca el puntero del mouse</p>
+                        <code>div.card:hover > img</code>
+                        <p>Selecciona la primer sección que se encuentre dentro de una etiqueta main</p>
+                        <code>main section:first-of-type</code>
+                        <p>Selecciona cualquier elemento que incluya en su classlist el texto "btn"</p>
+                        <code>**[class**="btn"]</code>
+                        <p>Selecciona todos los botones excepto aquellos que sean el último hijo</p>
+                        <code>button:not([class*="str"])</code>
+                        
+                    <h2>Ejercicio 2</h2>
+                        <h3>Describe qué elemento será seleccionado con base en los siguientes selectores:</h3>
+                        <code>header#main-header > ul</code>
+                        <p></p>
+                        <code>aside ul li:not(even)</code>
+                        <p></p>
+                        <code>section#posts article:nth-of-type( odd )</code>
+                        <p></p>
+                        <code>table tr td</code>
+                        <p></p>
+                        <code>footer > ul li a.nav-link</code>
+                        <p></p>
+                        <code>p span.text-white</code>
+                        <p></p>
+                        <code>section.bg-dark p.text-white span</code>
+                        <p></p>
+                    <h2>Ejercicio 3</h2>
+                        <h3>Escribir el código necesario para crear los siguientes componentes:</h3>
+                        <ul>
+                            <li>Un botón cuyo color orginal sea azul, texto blanco, y al poner el mouse sobre de él su color de fondo cambie a peru y el texto sea negro ( el botón no debe tener borde en ninguno de ambos estados )</li>
+                            <li>una sección que mida el ancho completo de la pantalla, la mitad de la pantalla de alto, y que dentro tenga dos imágenes cuales quiera, ambas con espacio igual entre ellas y entre los bordes de la sección</li>
+                        </ul>
+                    <h2>Ejercicio 4</h2>
+                        <h3></h3>
+                            <ul>
+                                <li>Crear 3 inputs de tipo radio, con las etiquetas "círculo", "cuadrado", "rectangulo", también crear un elemento que cambie de forma dependiendo del radio que esté seleccionado ( si se selecciona "círculo", el elemento debe convertirse en un círculo, y así respectivamente).</li>
+                            </ul>
+                            <p>* Para lograr que los radiobuttons sean excluyentes, se debe colocar el atributo "name" y todos deben tener el mismo valor, p.e:</p>
+                            <code>
+                                <input type="radio" name="shape" id="forma-1">
+
+                                <input type="radio" name="shape" id="forma-2">
+                            </code>
+                        
+                    
+                </main>
+            
+</body>
+</html>
+
