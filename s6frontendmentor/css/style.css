@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #494c5f;
+}
+
+body {
+  background-color: #f6f6fe;
+  background-image: url(../img/bg-top.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.mb-medium {
+  margin-bottom: 2rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header .control-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .control-wrapper span {
+  color: #b3b5c6;
+}
+
+header .control-wrapper label {
+  height: 30px;
+  width: 70px;
+  border-radius: 70px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  display: block;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+header .control-wrapper label:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+header .control-wrapper input {
+  display: none;
+}
+
+header .control-wrapper input:checked + label:before {
+  left: calc(100% - 27px);
+}
+
+.pricing-wrapper {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing-wrapper .price-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 3px 3px 3px #dadada;
+          box-shadow: 3px 3px 3px #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.pricing-wrapper .price-card h2 {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-wrapper .price-card h2 small {
+  font-size: 1.5rem;
+}
+
+.pricing-wrapper .price-card h2 ul {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.pricing-wrapper .price-card h2 ul li {
+  padding: 1rem;
+  border-top: 1px solid #b3b5c6;
+}
+
+.pricing-wrapper .price-card h2 ul li :last-of-type {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.pricing-wrapper .price-card h2 button {
+  height: 50px;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  letter-spacing: 2px;
+  border: none;
+}
+
+.pricing-wrapper .price-card h2:hover {
+  background-color: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+.pricing-wrapper .price-card h2:hover * {
+  color: white;
+}
+
+.pricing-wrapper .price-card h2:hover button {
+  background: white;
+  color: #6d708d;
+}
+
+@media only screen and (min-width: 992) {
+  body {
+    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25%, 25%;
+  }
+  .pricing-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .pricing-wrapper .price-card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .pricing-wrapper .price-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
