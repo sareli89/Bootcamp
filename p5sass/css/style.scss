@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+
+### Neutral
+
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%) */
+.bg-color {
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.dis-flex {
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.div-main {
+    height: 100%;
+    background-color:hsl(240, 78%, 98%);
+    
+    
+    
+}
+
+.bg-img-top{
+    background-image: url(../images/bg-top.svg);
+    background-repeat: no-repeat;
+    
+}
+
+.bg-img-bottom{
+    background-image: url(../images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+.card-wraps {
+    display: flex;
+    flex-direction: column;
+}
+
+.Button {
+    display: flex;
+    width: 9rem;
+    height: 1.8rem;
+    border-radius: 0.5rem;
+    color: hsl(240, 78%, 98%);
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+@media (max-width: 375px;) {
+    display: flex;
+    flex-wrap: wrap;
+}
