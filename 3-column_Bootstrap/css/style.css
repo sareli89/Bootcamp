@@ -1,0 +1,44 @@
+/*paragraphs*/
+/*background, headings, buttons*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+.sedan_card {
+  background-color: #e38826;
+}
+
+.suv_card {
+  background-color: #006970;
+}
+
+.luxury_card {
+  background-color: #004241;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+}
+
+.card button {
+  background-color: #f2f2f2;
+  border-radius: 18px;
+  border: 1px solid #f2f2f2;
+  width: 40%;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 1rem;
+}
+
+.card button:active {
+  background-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */

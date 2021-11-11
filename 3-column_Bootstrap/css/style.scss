@@ -1,0 +1,79 @@
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+$Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+@mixin button {
+    background-color: $Very-light-gray;
+    border-radius: 18px;
+    border: 1px solid $Very-light-gray;
+    width: 40%;
+    height: 40px;
+    color: $Transparent-white;
+    margin: 1rem;
+    &:active{
+        background-color: transparent;
+    }
+}
+
+@mixin cards {
+    flex-direction: column;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    h2{
+        color: $Very-light-gray;
+        margin: 1rem;
+    }
+    p{
+        color: $Transparent-white;
+        margin: 1rem;
+        height: 100px;
+    }
+    button {
+        @include button();
+        
+    }
+}
+
+
+
+.sedan_card {
+    background-color: $Bright-orange;
+}
+
+.suv_card {
+    background-color: $Dark-cyan;
+}
+
+.luxury_card{
+    background-color: $Very-dark-cyan;
+}
+
+.card {
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 1rem;
+    }
+    button {
+        @include button();
+    }  
+}
+
+$container-max-widths: (
+  md: 720px,
+  xl: 1140px,
+);
