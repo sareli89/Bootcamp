@@ -1,4 +1,4 @@
-let age = 20
+/*let age = 20
 
 if (age >= 18){
     console.log('Ya puedo votar 🗳')
@@ -69,3 +69,47 @@ for (numbers3 = 0; numbers3 <= 10; numbers3+=2) {
     console.log(numbers3)
 }
 
+*/
+
+// Ejercicio 1: puede pensionarse? ✓ > 60 anios ✓ 750 semanas cotiZadas
+
+let age = parseInt(prompt('Introduce tu edad:'))
+let workedWeeks = parseInt(prompt('Introduce el tolal de semanas cotiZadas:'))
+
+if (age >= 60 && workedWeeks >= 750 ) {
+    console.log('Felicidades, puedes retirarte!')
+}else{
+    console.log('Aun te falta, tu puedes')
+}
+
+
+// Ejercicio 2: esta lloviendo --> ver peli no esta lloviendo --> sacas a pasear a tu perro
+
+let weather = prompt('Esta lloviendo o soleado?')
+
+
+if (weather == "lloviendo"){
+    console.log('Hoy vere peli 🍿')
+} else {
+    console.log('Hoy caminare al perro 🐶')
+}
+
+// Ejercicio 3: Replica de funciones de un cajero. deposito, retiro, transferencia
+
+let operacion = prompt('Introduce la operacion que deseaar:')
+let dineroEnCuenta = parseInt(prompt('Introduce tu saldo total:'))
+let dineroOperacion = parseInt(prompt('Introduce la cantidad:'))
+
+switch (operacion) {
+    case 'deposito':
+        console.log('Tu saldo total es: ', dineroEnCuenta + dineroOperacion)
+        break
+    case 'retiro':
+        console.log('Tu saldo total es: ', dineroEnCuenta - dineroOperacion)
+        break
+    case 'transferencia':
+        console.log('Tu saldo total es: ', dineroEnCuenta - dineroOperacion)
+        break
+    default:
+        console.log('Operacion no permitida.')
+}
